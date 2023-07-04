@@ -149,7 +149,7 @@ message ContractAction {
    */
   oneof recipient {
     /**
-     * The AccountID of the recipient if the recipient is an account. Only HBars will be transferred, no other side
+     * The AccountID of the recipient if the recipient is an account. Only u2us will be transferred, no other side
      * effects should be expected.
      */
     AccountID recipient_account = 6;

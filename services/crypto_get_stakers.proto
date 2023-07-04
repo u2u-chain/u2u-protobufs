@@ -57,7 +57,7 @@ message ProxyStaker {
     AccountID accountID = 1;
 
     /**
-     * The number of hbars that are currently proxy staked
+     * The number of u2us that are currently proxy staked
      */
     int64 amount = 2;
 }

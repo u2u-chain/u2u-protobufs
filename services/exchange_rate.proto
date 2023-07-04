@@ -30,7 +30,7 @@ import "timestamp.proto";
 
 /**
  * An exchange rate between hbar and cents (USD) and the time at which the exchange rate will
- * expire, and be superseded by a new exchange rate. 
+ * expire, and be superseded by a new exchange rate.
  */
 message ExchangeRate {
     /**

@@ -130,7 +130,7 @@ message SchedulableTransactionBody {
     CryptoCreateTransactionBody cryptoCreateAccount = 7;
 
     /**
-     * Delete a cryptocurrency account (mark as deleted, and transfer hbars out)
+     * Delete a cryptocurrency account (mark as deleted, and transfer u2us out)
      */
     CryptoDeleteTransactionBody cryptoDelete = 8;
 

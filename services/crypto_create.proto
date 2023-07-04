@@ -39,14 +39,14 @@ import "duration.proto";
  * The Key field is the key used to sign transactions for this account. If the account has
  * receiverSigRequired set to true, then all cryptocurrency transfers must be signed by this
  * account's key, both for transfers in and out. If it is false, then only transfers out have to be
- * signed by it. When the account is created, the payer account is charged enough hbars so that the
+ * signed by it. When the account is created, the payer account is charged enough u2us so that the
  * new account will not expire for the next autoRenewPeriod seconds. When it reaches the expiration
  * time, the new account will then be automatically charged to renew for another autoRenewPeriod
- * seconds. If it does not have enough hbars to renew for that long, then the remaining hbars are
+ * seconds. If it does not have enough u2us to renew for that long, then the remaining u2us are
  * used to extend its expiration as long as possible. If it is has a zero balance when it expires,
  * then it is deleted. This transaction must be signed by the payer account. If receiverSigRequired
  * is false, then the transaction does not have to be signed by the keys in the keys field. If it is
- * true, then it must be signed by them, in addition to the keys of the payer account. If the 
+ * true, then it must be signed by them, in addition to the keys of the payer account. If the
  * auto_renew_account field is set, the key of the referenced account must sign.
  *
  * An entity (account, file, or smart contract instance) must be created in a particular realm. If
@@ -165,7 +165,7 @@ message CryptoCreateTransactionBody {
      * A given alias can map to at most one account on the network at a time. This uniqueness will be enforced
      * relative to aliases currently on the network at alias assignment.
      *
-     * If a transaction creates an account using an alias, any further crypto transfers to that alias will 
+     * If a transaction creates an account using an alias, any further crypto transfers to that alias will
      * simply be deposited in that account, without creating anything, and with no creation fee being charged.
      */
      bytes alias = 18;

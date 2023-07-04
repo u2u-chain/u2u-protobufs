@@ -30,7 +30,7 @@ import "response.proto";
 import "transaction.proto";
 
 /**
- * Transactions and queries for the file service. 
+ * Transactions and queries for the file service.
  */
 service SmartContractService {
     /**
@@ -77,7 +77,7 @@ service SmartContractService {
     };
 
     /**
-     * Deletes a contract instance and transfers any remaining hbars to a specified receiver
+     * Deletes a contract instance and transfers any remaining u2us to a specified receiver
      */
     rpc deleteContract (Transaction) returns (TransactionResponse);
 
