@@ -55,7 +55,7 @@ message SingleAccountBalances {
     /**
      * The account's hbar balance
      */
-    uint64 hbarBalance = 2;
+    uint64 u2uBalance = 2;
 
     /**
      * The list of the account's token balances
@@ -68,7 +68,7 @@ message SingleAccountBalances {
  */
 message AllAccountBalances {
     /**
-     * An instant in consensus time 
+     * An instant in consensus time
      */
     Timestamp consensusTimestamp = 1;
 
